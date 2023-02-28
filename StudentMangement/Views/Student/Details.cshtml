@@ -1,0 +1,20 @@
+﻿@model Student
+
+<form method="get">
+    <div class="form-group">
+        <label class="form-label">Id</label>
+        <input type="number" value="@Model.Id" readonly class="form-control">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input type="text" value="@Model.Name" readonly class="form-control">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Grade</label>
+        <input type="number" value="@Model.Grade" readonly class="form-control">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date Of Birth</label>
+        <input type="text" value="@Model.BirthDate.ToShortDateString() mm/dd/yyyy" readonly  class="form-control">
+    </div>
+</form>

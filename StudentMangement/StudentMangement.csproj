@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230224103400_changedate.cs" />
+    <Compile Remove="Migrations\20230224103400_changedate.Designer.cs" />
+    <Compile Remove="Migrations\20230227085157_createtable.cs" />
+    <Compile Remove="Migrations\20230227085157_createtable.Designer.cs" />
+    <Compile Remove="Migrations\20230227094911_deletebindproperty.cs" />
+    <Compile Remove="Migrations\20230227094911_deletebindproperty.Designer.cs" />
+    <Compile Remove="Migrations\20230227100701_addingStudentModel.cs" />
+    <Compile Remove="Migrations\20230227100701_addingStudentModel.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

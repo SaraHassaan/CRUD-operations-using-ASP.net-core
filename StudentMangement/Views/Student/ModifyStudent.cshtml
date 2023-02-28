@@ -1,0 +1,24 @@
+﻿@model Student
+<form method="post">
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input type="number" asp-for="Id" readonly class="form-control" >
+        <span asp-validation-for="Name" asp-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Name1">Name</label>
+        <input type="text" asp-for="Name" class="form-control" id="Name1" >
+        <span asp-validation-for="Name" asp-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label  asp-for="Grade">Grade</label>
+        <input type="number" class="form-control" asp-for="Grade" >
+        <span asp-validation-for="Grade" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BirthDate">Date Of Birth</label>
+        <input type="date" asp-for="BirthDate" class="form-control" >
+        <span asp-validation-for="BirthDate" class="text-danger"></span>
+    </div>
+    <button type="submit" asp-action="ModifyStudent" class="btn btn-primary">Edit</button>
+</form>
